@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Vollkorn', serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* INTRO */
+.intro{
+    background: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.introducao {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+}
+
+nav li{
+    margin: 0 8px;
+}
+
+nav li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    position: relative;
+}
+
+nav li a:hover:after {
+    position: absolute;
+    content:  '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: white;
+}
+
+/* MESSAGEN INTRO */
+.mensseger {
+    flex: 1 1 200;
+    max-width: 460px;
+    border: 2px solid white;
+    margin: 20px;
+    margin: 60px 0;
+}
+
+.mensseger p {
+    padding: 10px;
+    font-size: 3em;
+    width: 100%;
+    font-weight: 100;
+    color: white;
+    line-height: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* MAIN */
+
+.conteudo {
+    width: 100%;
+}
+
+.conteudo .virtual {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 120px auto;
+    align-items: flex-end;
+    position: relative;
+}
+/* VIRTUAL */
+
+
+.virtual img{
+    flex: 1;
+    max-width: 600px;
+}
+
+.contexto {
+    flex: 1;
+    max-width: 460px;
+    padding: 60px 40px 0 40px;
+    background: hsl(0, 0%, 100%);
+    right: 30px;
+    z-index: 200;
+    position:absolute;
+    align-content: flex-end;
+}
+
+.contexto h2{
+    line-height: 1em;
+    font-weight: normal;
+    font-size: 2em;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: .3rem;
+
+}
+
+.contexto p {
+    padding-top: 20px;
+    font-size: .937em;
+    color: hsl(0, 0%, 55%);
+    line-height: 1.4em;
+    
+}
+
+/* GALERIA */
+
+.galeria {
+    display: flex;
+    max-width: 960px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 150px auto;
+    
+}
+
+.galeria-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria-titulo h1 {
+    font-weight:100;
+    font-size: 3em;
+    color:  hsl(0, 0%, 55%);
+    letter-spacing: .5rem;
+}
+
+.galeria-titulo .btn-ver{
+    background: hsl(0, 0%, 0%);
+    color: white;
+    border: none;
+    padding:  10px;
+    width: 100px;
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+
+.galeria-container {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    grid-template-areas: 
+    "word", "arcade", "soccer", "the-grid"
+    "word", "arcade", "soccer", "the-grid"
+    "word", "arcade", "soccer", "the-grid"
+    "above", "pocket", "curiosity", "fisheye"
+    "above", "pocket", "curiosity", "fisheye"
+    "above", "pocket", "curiosity", "fisheye"
+    ;
+    grid-template-rows: 1fr 1fr;
+    margin: 40px 0;
+    height: 100%;
+    grid-gap: 20px;
+    
+}
+
+.word {
+    background: url(../images/desktop/image-deep-earth.jpg);
+    background-size: cover;
+    grid-area: "word";
+    grid-column: 1 / 1;
+    position: relative;
+}
+
+.word h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.arcade {
+    background: url(../images/desktop/image-night-arcade.jpg);
+    background-size: cover;
+    grid-area: "arcade";
+    grid-column: 2 / 2;
+}
+
+.arcade h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.soccer {
+    background: url(../images/desktop/image-soccer-team.jpg);
+    background-size: cover;
+    grid-area: "soccer";
+    grid-column: 3 / 3;
+}
+
+.soccer h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.the-grid {
+    background: url(../images/desktop/image-grid.jpg);
+    background-size: cover;
+    grid-area: "the-grid";
+    grid-column: 4 / 4;
+}
+
+.the-grid h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.above {
+    background: url(../images/desktop/image-from-above.jpg);
+    background-size: cover;
+    grid-area: "above";
+    grid-column: 1 / 1;
+    position: relative;
+}
+
+.above h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 150px;
+    font-weight: 100;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.pocket {
+    background: url(../images/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+    grid-area: "pocket";
+    grid-column: 2 / 2;
+}
+
+.pocket h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.curiosity {
+    background: url(../images/desktop/image-curiosity.jpg);
+    background-size: cover;
+    grid-area: "curiosity";
+    grid-column: 3 / 3;
+}
+
+.curiosity h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+.fisheye {
+    background: url(../images/desktop/image-fisheye.jpg);
+    background-size: cover;
+    grid-area: "fisheye";
+    grid-column: 4 / 4;
+}
+
+.fisheye h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 350px;
+    margin-left: 20px;
+    width: 150px;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: .9;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    background: hsl(0, 0%, 0%);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-container .logo-footer{
+    margin-top: 40px 0;
+}
+
+.redes ul a {
+    font-size: 1em;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.redes-socias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    
+}
+
+.redes-soci a:hover:after {
+    position: absolute;
+    content:  '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: white;
+}
+
+.redes-socias img{
+    position: relative;
+}
+
+
+
+.copy p {
+    color: white;
+    margin-top: 20px;
+}
